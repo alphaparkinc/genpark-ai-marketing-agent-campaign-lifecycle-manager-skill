@@ -1,0 +1,38 @@
+{
+  "name": "genpark-ai-marketing-agent-campaign-lifecycle-manager-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Autonomous AI marketing agent that plans, launches, monitors, and optimizes full-funnel campaign lifecycles with real-time budget reallocation.",
+  "author": "genpark",
+  "category": "marketing",
+  "tags": [
+    "marketing-agent",
+    "campaign-lifecycle",
+    "budget-optimization",
+    "full-funnel",
+    "growth-automation"
+  ],
+  "inputs": {
+    "campaign_brief": {
+      "type": "object"
+    },
+    "total_budget_usd": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "campaign_plan": {
+      "type": "object"
+    },
+    "channel_budget_allocation": {
+      "type": "object"
+    },
+    "projected_metrics": {
+      "type": "object"
+    },
+    "optimization_actions": {
+      "type": "array"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
